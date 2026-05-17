@@ -329,7 +329,7 @@ export default function Home() {
 
             <textarea
               placeholder="Your Inquiry"
-              rows="6"
+              rows={6}
               className="w-full border border-gray-300 rounded-2xl px-6 py-4"
             ></textarea>
 
