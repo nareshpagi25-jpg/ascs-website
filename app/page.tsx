@@ -3,23 +3,26 @@ export default function Home() {
     <main className="min-h-screen bg-white text-black">
 
       {/* Header */}
-      <header className="border-b border-gray-200 sticky top-0 bg-white z-50">
+      <header className="border-b border-gray-200 sticky top-0 bg-white z-50 backdrop-blur">
+
         <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
           <div>
+
             <h1 className="text-3xl font-black">
               ASCS
             </h1>
 
             <p className="text-sm text-gray-500">
-              Asian Society of Cosmetic Scientists
+              Advanced Cosmetic Science Network
             </p>
+
           </div>
 
           <div className="flex gap-4">
 
             <button className="border border-gray-300 px-5 py-2 rounded-xl">
-              Membership
+              Community
             </button>
 
             <button className="bg-black text-white px-5 py-2 rounded-xl">
@@ -29,9 +32,10 @@ export default function Home() {
           </div>
 
         </div>
+
       </header>
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="relative overflow-hidden">
 
         <div
@@ -44,30 +48,28 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-6 py-32">
 
-          <div className="max-w-4xl">
+          <div className="max-w-5xl">
 
             <p className="uppercase tracking-[0.3em] text-sm text-gray-500">
               More Is Coming
             </p>
 
             <h2 className="text-6xl font-black leading-tight mt-8">
-              Advancing Scientific Beauty Care & Community Across Asia
+              Advanced Cosmetic Science Network
             </h2>
 
-            <p className="mt-8 text-xl text-gray-600 leading-9">
-              ASCS is a professional scientific platform focused on cosmetic science,
-              skincare innovation, formulation technology, education,
-              research, and community collaboration throughout Asia.
+            <p className="mt-10 text-2xl leading-10 text-gray-700">
+              ASCS is a modern cosmetic science, innovation, and industry collaboration platform advancing skincare, formulation, and beauty technology across Asia.
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-12">
+            <div className="flex flex-wrap gap-5 mt-14">
 
               <button className="bg-black text-white px-8 py-4 rounded-2xl font-semibold">
-                Join ASCS
+                Join Community
               </button>
 
               <button className="border border-gray-300 px-8 py-4 rounded-2xl font-semibold">
-                Explore Community
+                Explore Platform
               </button>
 
             </div>
@@ -89,8 +91,8 @@ export default function Home() {
 
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
-                alt="Scientific community"
-                className="rounded-[40px] shadow-xl"
+                alt="Scientific Community"
+                className="rounded-[40px] shadow-2xl"
               />
 
             </div>
@@ -102,14 +104,13 @@ export default function Home() {
               </p>
 
               <h3 className="text-5xl font-black mt-6 leading-tight">
-                Building Trust Through Cosmetic Science & Innovation
+                Building The Future Of Scientific Beauty Innovation
               </h3>
 
-              <p className="mt-8 text-lg text-gray-600 leading-8">
-                Asian Society of Cosmetic Scientists (ASCS) aims to unite
-                cosmetic scientists, formulators, dermatologists,
-                researchers, educators, and industry professionals under one
-                scientific ecosystem dedicated to innovation and responsible beauty care.
+              <p className="mt-8 text-lg leading-8 text-gray-600">
+                ASCS connects cosmetic scientists, formulators,
+                researchers, dermatologists, brands, ingredient suppliers,
+                startups, and beauty innovators into one modern scientific ecosystem.
               </p>
 
             </div>
@@ -120,7 +121,7 @@ export default function Home() {
 
       </section>
 
-      {/* Membership */}
+      {/* Ecosystem */}
       <section className="py-24">
 
         <div className="max-w-7xl mx-auto px-6">
@@ -128,59 +129,46 @@ export default function Home() {
           <div className="text-center">
 
             <p className="uppercase tracking-[0.3em] text-sm text-gray-500">
-              Membership
+              ASCS Ecosystem
             </p>
 
             <h3 className="text-5xl font-black mt-6">
-              Join Our Scientific Community
+              Innovation • Media • Technology • Community
             </h3>
-
-            <p className="mt-6 text-lg text-gray-600">
-              Student • Professional • Corporate Membership
-            </p>
 
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
+          <div className="grid md:grid-cols-4 gap-8 mt-20">
 
-            <div className="border border-gray-200 rounded-[32px] p-10">
+            {[
+              "AI Tools",
+              "Media",
+              "Consulting",
+              "Events",
+              "Products",
+              "Collaborations",
+              "Training",
+              "Certifications"
+            ].map((item) => (
+              <div
+                key={item}
+                className="border border-gray-200 rounded-[32px] p-8 hover:shadow-xl transition"
+              >
 
-              <h4 className="text-3xl font-black">
-                Student
-              </h4>
+                <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center text-white text-xl">
+                  ✦
+                </div>
 
-              <p className="mt-6 text-gray-600 leading-8">
-                Access webinars, educational resources,
-                networking opportunities, and scientific discussions.
-              </p>
+                <h4 className="text-2xl font-bold mt-8">
+                  {item}
+                </h4>
 
-            </div>
+                <p className="mt-4 text-gray-600 leading-7">
+                  Expanding the future of cosmetic science through innovation and collaboration.
+                </p>
 
-            <div className="bg-black text-white rounded-[32px] p-10">
-
-              <h4 className="text-3xl font-black">
-                Professional
-              </h4>
-
-              <p className="mt-6 text-gray-300 leading-8">
-                Connect with formulators, researchers,
-                industry leaders, and innovation partners.
-              </p>
-
-            </div>
-
-            <div className="border border-gray-200 rounded-[32px] p-10">
-
-              <h4 className="text-3xl font-black">
-                Corporate
-              </h4>
-
-              <p className="mt-6 text-gray-600 leading-8">
-                Collaborate with the cosmetic science community
-                through partnerships, events, and innovation programs.
-              </p>
-
-            </div>
+              </div>
+            ))}
 
           </div>
 
@@ -188,7 +176,7 @@ export default function Home() {
 
       </section>
 
-      {/* Blog Section */}
+      {/* Blog */}
       <section className="bg-gray-50 py-24">
 
         <div className="max-w-7xl mx-auto px-6">
@@ -198,17 +186,17 @@ export default function Home() {
             <div>
 
               <p className="uppercase tracking-[0.3em] text-sm text-gray-500">
-                ASCS Blog
+                ASCS Media
               </p>
 
               <h3 className="text-5xl font-black mt-6">
-                Latest Scientific Articles & Insights
+                Blogs • Interviews • Research • Innovation
               </h3>
 
             </div>
 
             <button className="border border-gray-300 px-6 py-3 rounded-2xl">
-              View All Blogs
+              View Media
             </button>
 
           </div>
@@ -226,12 +214,11 @@ export default function Home() {
               <div className="p-8">
 
                 <h4 className="text-2xl font-bold leading-snug">
-                  Understanding Modern Sunscreen Formulation Science
+                  The Future Of Sunscreen Innovation
                 </h4>
 
                 <p className="mt-4 text-gray-600">
-                  Explore UV filters, texture optimization,
-                  and next-generation sunscreen systems.
+                  Exploring modern UV technologies, textures, and global sunscreen science.
                 </p>
 
               </div>
@@ -242,19 +229,18 @@ export default function Home() {
 
               <img
                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
-                alt="Community"
+                alt="Neurocosmetics"
                 className="h-56 w-full object-cover"
               />
 
               <div className="p-8">
 
                 <h4 className="text-2xl font-bold leading-snug">
-                  Neurocosmetics & Emotional Beauty Innovation
+                  Neurocosmetics & Emotional Beauty
                 </h4>
 
                 <p className="mt-4 text-gray-600">
-                  Discover emerging trends in sensory-driven skincare
-                  and emotional wellness cosmetics.
+                  Understanding the future relationship between skincare and emotional wellness.
                 </p>
 
               </div>
@@ -265,19 +251,18 @@ export default function Home() {
 
               <img
                 src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2070&auto=format&fit=crop"
-                alt="Research"
+                alt="Community"
                 className="h-56 w-full object-cover"
               />
 
               <div className="p-8">
 
                 <h4 className="text-2xl font-bold leading-snug">
-                  Cosmetic Science Community & Future Innovation
+                  Building Asia’s Cosmetic Science Community
                 </h4>
 
                 <p className="mt-4 text-gray-600">
-                  Building scientific collaboration across Asia
-                  for advanced cosmetic research and education.
+                  Connecting cosmetic scientists and innovation leaders across Asia.
                 </p>
 
               </div>
@@ -290,7 +275,7 @@ export default function Home() {
 
       </section>
 
-      {/* Inquiry Form */}
+      {/* Inquiry */}
       <section className="py-24">
 
         <div className="max-w-4xl mx-auto px-6">
@@ -307,7 +292,7 @@ export default function Home() {
 
           </div>
 
-          <div className="mt-16 space-y-6">
+          <div className="space-y-6 mt-16">
 
             <input
               type="text"
@@ -328,14 +313,53 @@ export default function Home() {
             />
 
             <textarea
-              placeholder="Your Inquiry"
               rows={6}
+              placeholder="Your Inquiry"
               className="w-full border border-gray-300 rounded-2xl px-6 py-4"
             ></textarea>
 
             <button className="bg-black text-white px-10 py-4 rounded-2xl font-semibold">
               Submit Inquiry
             </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Social Media */}
+      <section className="bg-gray-50 py-24">
+
+        <div className="max-w-7xl mx-auto px-6 text-center">
+
+          <p className="uppercase tracking-[0.3em] text-sm text-gray-500">
+            Social Platforms
+          </p>
+
+          <h3 className="text-5xl font-black mt-6">
+            Connect With ASCS
+          </h3>
+
+          <div className="flex flex-wrap justify-center gap-5 mt-16">
+
+            {[
+              "Instagram",
+              "Facebook",
+              "Twitter / X",
+              "LinkedIn",
+              "YouTube",
+              "WhatsApp",
+              "Telegram",
+              "Threads"
+            ].map((item) => (
+              <button
+                key={item}
+                className="border border-gray-300 px-6 py-4 rounded-2xl hover:bg-black hover:text-white transition"
+              >
+                {item}
+              </button>
+            ))}
 
           </div>
 
@@ -355,8 +379,25 @@ export default function Home() {
             </h4>
 
             <p className="text-gray-400 mt-4 leading-8">
-              Asian Society of Cosmetic Scientists
+              Advanced Cosmetic Science Network
             </p>
+
+          </div>
+
+          <div>
+
+            <h5 className="font-bold text-lg">
+              Platform
+            </h5>
+
+            <ul className="space-y-4 mt-6 text-gray-400">
+
+              <li>AI Tools</li>
+              <li>Media</li>
+              <li>Events</li>
+              <li>Training</li>
+
+            </ul>
 
           </div>
 
@@ -383,25 +424,6 @@ export default function Home() {
           <div>
 
             <h5 className="font-bold text-lg">
-              Social Media
-            </h5>
-
-            <ul className="space-y-4 mt-6 text-gray-400">
-
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Twitter / X</li>
-              <li>LinkedIn</li>
-              <li>YouTube</li>
-              <li>WhatsApp Community</li>
-
-            </ul>
-
-          </div>
-
-          <div>
-
-            <h5 className="font-bold text-lg">
               Newsletter
             </h5>
 
@@ -420,7 +442,7 @@ export default function Home() {
         </div>
 
         <div className="border-t border-white/10 mt-16 pt-8 text-center text-gray-500">
-          © 2026 ASCSORG • Asian Society of Cosmetic Scientists
+          © 2026 ASCS • Advanced Cosmetic Science Network
         </div>
 
       </footer>
